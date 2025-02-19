@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Stage Informatique Réseau</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* Fond sombre */
+            color: #f4f4f4; /* Texte clair */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header {
+            background: #1e1e1e; /* Tête sombre */
+            color: #ffffff;
+            padding: 20px;
+            font-size: 28px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        section {
+            margin: 120px auto 20px auto;
+            max-width: 1100px;
+            background: #2c2c2c; /* Fond sombre de la section */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #f4f4f4; /* Texte clair */
+            transition: background-color 0.3s ease;
+        }
+
+        footer {
+            background: #1e1e1e;
+            color: #f4f4f4;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+            position: fixed;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #444; /* Bordure plus sombre */
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #333; /* Fond sombre des entêtes */
+        }
+
+        .mission-link {
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .mission-link:hover {
+            color: #03a9f4; /* Lien plus clair au survol */
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .annexe {
+            flex: 0 0 40%;
+            background: #333; /* Fond plus sombre pour l'annexe */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .competences {
+            flex: 1;
+            max-width: 60%;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        Portfolio - Mon Stage en Informatique Réseau
+    </header>
+
+    <div class="main-content">
+        <section>
+            <h2>Présentation</h2>
+            <p>Je m'appelle Hedi Rahaimi, un jeune technicien réseaux actuellement en stage chez New Media, situé à Rillieux-la-Pape.</p>
+            <a href="https://gofile.io/d/4woEQV" target="_blank" class="mission-link">Télécharger mon CV</a>
+        </section>
+
+        <section class="annexe">
+            <h2>Annexe</h2>
+            <p>Accédez aux documents annexes :</p>
+            <a href="https://gofile.io/d/T7crNx" target="_blank" class="mission-link">Lien vers les annexes</a>
+        </section>
+    </div>
+
+    <section>
+        <h2>Mes Missions</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Mission</th>
+                <th>Accès</th>
+            </tr>
+            <tr>
+                <td>6 - 12 Janvier</td>
+                <td>Mise en place d'une baie de brassage</td>
+                <td>
+                    <a class="mission-link" href="https://www.baiebrassage.fr/blog/guide-conseil-montage-installation-baie-de-brassage.html" target="_blank">
+                        Voir <i class="fas fa-external-link-alt icon"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>13 - 14 Janvier</td>
+                <td>Création d'un serveur N.A.S</td>
+                <td>
+                    <a class="mission-link" href="https://www.sauvegardedefichiers.fr/comment-marche-un-serveur-nas-fonctionnalites-et-usages00392" target="_blank">
+                        Voir <i class="fas fa-external-link-alt icon"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>15 - 19 Janvier</td>
+                <td>Sécurisation et centralisation des fichiers</td>
+                <td>
+                    <a class="mission-link" href="https://www.oversoc.com/ressources/article/centralisation-des-donnees-un-role-cle-dans-la-gouvernance-du-systeme-dinformation" target="_blank">
+                        Voir <i class="fas fa-external-link-alt icon"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>22 Janvier - 22 Février</td>
+                <td>Maintenance et fabrication de PC</td>
+                <td>
+                    <a class="mission-link" href="https://j2rauto.com/non-classe/ordinateurs-durcis-quelle-solution-pour-latelier/" target="_blank">
+                        Voir <i class="fas fa-external-link-alt icon"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="competences">
+        <h2>Compétences Acquises</h2>
+        <ul>
+            <li><strong>Administration des réseaux</strong>: Installation, configuration et gestion des réseaux locaux (LAN), gestion des utilisateurs et des permissions.</li>
+            <li><strong>Configuration des équipements réseau</strong>: Configuration de routeurs, switches, pare-feu pour assurer la sécurité et la performance du réseau.</li>
+            <li><strong>Support technique</strong>: Assistance aux utilisateurs pour la résolution de problèmes matériels et logiciels, ainsi que la configuration des dispositifs réseau.</li>
+            <li><strong>Virtualisation</strong>: Mise en place de machines virtuelles pour optimiser l'utilisation des ressources serveurs, gestion de serveurs virtuels avec des outils comme VMware et Hyper-V.</li>
+            <li><strong>Sécurité réseau</strong>: Mise en place de stratégies de sécurité, gestion des VPN, détection des intrusions et renforcement des accès distants.</li>
+            <li><strong>Gestion des serveurs</strong>: Installation et configuration de serveurs (Windows Server, Linux), gestion des sauvegardes et des bases de données.</li>
+            <li><strong>Maintenance de matériel</strong>: Réparation et entretien des PC, des imprimantes, des périphériques réseau, ainsi que la mise à niveau des composants matériels.</li>
+            <li><strong>Centralisation des données</strong>: Utilisation de solutions de centralisation pour assurer la sécurité des données sensibles, notamment à travers des serveurs NAS.</li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2024 - Mon Portfolio
+    </footer>
+
+</body>
+</html>
